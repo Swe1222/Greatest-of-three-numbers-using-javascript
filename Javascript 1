@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>greatest of three numbers</title>
+</head>
+<body>
+<h1>To find greatest of three numbers:</h1>
+<p id="result" onclick="max();">The greatest of three numbrers among x,y,z:</p>
+<script>
+function max(){
+let x=30;
+let y=45;
+let z=10;
+ max_value="";
+if(x>y&&x>z)
+{
+  max_value=x;
+}
+else if(y>x&&y>z)
+{
+  max_value=y;
+}
+else
+{
+  max_value=z;
+}
+document.getElementById("result").innerHTML=max_value;
+}
+</script>
+</body>
+</html>
